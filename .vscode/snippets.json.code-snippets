@@ -1,0 +1,14 @@
+{
+  "Test Description": {
+    "scope": "javascript,typescript",
+    "prefix": ["desc", "describe"],
+    "body": ["describe(\"${1:description}\", () => {", "\t$0", "});"],
+    "description": "Test description"
+  },
+  "Test Case": {
+    "scope": "javascript,typescript",
+    "prefix": "test",
+    "body": ["test(\"it should ${1:description}\", () => {", "\t$0", "});"],
+    "description": "Test case"
+  }
+}
