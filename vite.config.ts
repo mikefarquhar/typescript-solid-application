@@ -14,18 +14,6 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "~/", replacement: "/src/" }],
   },
-  test: {
-    globals: true,
-    environment: "jsdom",
-    setupFiles: ["./node_modules/@testing-library/jest-dom/vitest.js"],
-    deps: {
-      optimizer: {
-        web: {
-          include: ["solid-js"],
-        },
-      },
-    },
-  },
   build: {
     target: "esnext",
   },
