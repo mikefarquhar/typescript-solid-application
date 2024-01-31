@@ -18,6 +18,9 @@
     "tsconfigRootDir": "./"
   },
   "plugins": ["@typescript-eslint", "solid"],
+  "rules": {
+    "@typescript-eslint/unbound-method": "off"
+  },
   "overrides": [
     {
       "files": ["**/*.js", "**/*.jsx"],
