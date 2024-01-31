@@ -12,13 +12,6 @@ export default defineConfig({
   },
   test: {
     environment: "jsdom",
-    deps: {
-      optimizer: {
-        web: {
-          exclude: ["solid-js", "@solidjs/testing-library"],
-        },
-      },
-    },
     globals: true,
     setupFiles: ["node_modules/@testing-library/jest-dom/vitest"],
   },
